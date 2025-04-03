@@ -1,13 +1,40 @@
-\documentclass{article}
+\documentclass[10pt, letterpaper]{article}
 
 \usepackage{amsmath}
-\usepackage{geometry}[margin=1in]
+\usepackage{geometry}
 \usepackage{titlesec}
+\usepackage{enumitem}
+
+ \geometry{
+ a4paper,
+ left=1in,
+ right=1in,
+ left=1in,
+ top=1in,
+ }
+
+\titlespacing{\section}
+{-1pt}
+{0.3 cm}
+{0.2 cm}
+
+\titlespacing{\subsection}
+{-1pt}
+{0.3 cm}
+{0.2 cm}
 
 \begin{document}
+\thispagestyle{empty}
+\begin{center}
+	\textbf{\huge{Aiden Wenzel}}
+	\vspace{3pt}
+
+	Ann Arbor, MI wenzel.aiden@outlook.com github.com/aiden-wenzel
+\end{center}
+
 \section*{Education}
 \subsection*{University of Michigan  Ann Arbor, MI  September 2023 - Present}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item September 2023
 	\item Electrical Engineering BSE
 	\item Computer Science and Music Minor
@@ -15,7 +42,7 @@
 
 \section*{Experience}
 \subsection*{Coretek Farmington, MI}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item May 2024 - Present
 	\item Gained experience with Microsoft Azure and on-premisise server infrastructure.
 	\item Used job knowledge to build my own self hosting game server using port fowarding and DNS.
@@ -24,14 +51,14 @@
 
 \section*{Skills}
 \subsection*{Programming}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Matlab: Organized data, processed images, and plotted data.
 	\item C++: Substaintial knowledge of STL. Implemented numerous algorithms and data structures from scratch.
 	\item Python: Built deep learning models with PyTorch and processed data with Pandas, Numpy, and Matplotlib.
 \end{itemize}
 
 \subsection*{Circuit Analysis}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Waveforms: Analyzed analog signals in AC and DC circuits with an Oscilloscope.	
 	\item LTSpice: Simulated analog circuits.
 	\item Logisim: Simulated digital logical circuits.
@@ -39,14 +66,14 @@
 
 \section*{Projects}
 \subsection*{Conway's Game of Life \text{\text{|}} C++}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Wrote custom implementation of Conway's Game of Life.
 	\item Customized build system and dependency management with CMake.
 \end{itemize}
 
 \section*{Extra Ciriculars}
 \subsection*{Michigan Marching Band}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Dedicated approximately 20 hours each week towards rehearsals and performances in the Big House.
 	\item Went to the Big 10 Championship against the University of Iowa 2023,
 		and the ReliQeust Bowl against the University of Alabama 2024.
