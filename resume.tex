@@ -6,13 +6,13 @@
 \usepackage{enumitem}
 \usepackage{listings}
 
- \geometry{
- a4paper,
- left=0.5in,
- right=0.5in,
- bottom=0.5in,
- top=0.5in,
- }
+\geometry{
+	a4paper,
+	left=0.5in,
+	right=0.5in,
+	bottom=0.5in,
+	top=0.5in,
+}
 
 \titlespacing{\section}
 {0pt} %left
@@ -23,6 +23,12 @@
 {0pt}
 {0pt}
 {0pt}
+
+\newcommand{\resumeEntry}[2]{%
+	\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+		\large{\textbf{#1}} & \large{#2} \\
+	\end{tabular*}\vspace{-5pt}
+}
 
 \begin{document}
 \thispagestyle{empty}
@@ -37,10 +43,9 @@
 \hrule
 \vspace{3pt}
 
-\subsection*{University of Michigan}
+\resumeEntry{University of Michigan}{September 2023 - May 202}
 \begin{itemize}[noitemsep]
-	\item Ann Arbor, MI (September 2023 - May 2027)
-        \item GPA: $3.45/4.00$
+	\item GPA: $3.45/4.00$
 	\item BSE, Electrical Engineering
 	\item Minor, Computer Science and Music
 \end{itemize}
@@ -49,9 +54,8 @@
 \hrule
 \vspace{3pt}
 
-\subsection*{Coretek}
+\resumeEntry{Technical Support Specialist, Coretek}{May 2024 - July 2025}
 \begin{itemize}[noitemsep]
-	\item Technical Support Specialist (May 2024 - July 2025)
 	\item Worked with HTML, CSS, and C\# to develop intuitive ASP.NET UIs.
 	\item Used C\# APIs to pull cloud resource information from MS Azure and ticket information from ServiceNow.
 	\item Used KQL to query and summarize cloud resource analytics in Azure dashboards.
@@ -61,7 +65,7 @@
 \hrule
 \vspace{3pt}
 
-\subsection*{Programming}
+\resumeEntry{Programming}{}
 \begin{itemize}[noitemsep]
 	\item Matlab: Organized data, processed images, and plotted data.
 	\item C++: Substantial knowledge of STL. Implemented numerous algorithms and data structures from scratch.
@@ -70,14 +74,14 @@
 	\item \LaTeX: Wrote elegant, concise lab reports and homework assignments.
 \end{itemize}
 
-\subsection*{Unix}
+\resumeEntry{Unix}{}
 \begin{itemize}[noitemsep]
 	\item Worked with Debian-based Linux distributions such as Ubuntu and Mint.
 	\item Familiar with terminal-based text editing using Vim.
 	\item Experience with basic terminal utilities such as \lstinline{grep}, \lstinline{git}, \lstinline{make}, and \lstinline{tmux}.
 \end{itemize}
 
-\subsection*{Circuit Analysis}
+\resumeEntry{Circuit Analysis}{}
 \begin{itemize}[noitemsep]
 	\item Waveforms: Analyzed analog signals in AC and DC circuits with an Oscilloscope.	
 	\item LTspice: Simulated analog circuits.
@@ -88,19 +92,19 @@
 \section*{Projects}
 \hrule
 \vspace{3pt}
-\subsection*{Fractal Visualizer $\vert$ C++}
+\resumeEntry{Fractal Visualizer $\vert$ C++}{}
 \begin{itemize}[noitemsep]
     \item Utilized OpenGL APIs to accurately visualize the Mandelbrot set and Julia sets.
     \item Implemented custom panning and zoom functionality for near-infinite zooming into complex geometries.
 \end{itemize}
 
-\subsection*{Conway's Game of Life $\vert$ C++}
+\resumeEntry{Conway's Game of Life $\vert$ C++}{}
 \begin{itemize}[noitemsep]
 	\item Wrote custom implementation of Conway's Game of Life using SDL.
 	\item Customized build system and dependency management with CMake.
 \end{itemize}
 
-\subsection*{Instrument Recognition Software $\vert$ Python}
+\resumeEntry{Instrument Recognition Software $\vert$ Python}{}
 \begin{itemize}[noitemsep]
 	\item Worked with a team of 3 other engineering students to build an instrument recognition app.
 	\item Input audio data would be processed using the Librosa library. Harmonic overtones in audio samples would be extracted using the FFT algorithm.
@@ -112,7 +116,7 @@
 \hrule
 \vspace{3pt}
 
-\subsection*{Michigan Marching Band}
+\resumeEntry{Michigan Marching Band}{}
 \begin{itemize}[noitemsep]
 	\item Dedicated approximately 20 hours each week to rehearsals and performances in the Big House.
 	\item Performed at the Big Ten Championship against the University of Iowa 2023,
